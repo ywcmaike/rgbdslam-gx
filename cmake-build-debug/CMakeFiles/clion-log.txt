@@ -1,0 +1,53 @@
+/home/ywc/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ywc/work/cplusplus/slam
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.2.92
+-- Found eigen: /usr/include/eigen3  
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+--   atomic
+--   regex
+-- Checking for module 'libopenni'
+--   Found libopenni, version 1.5.4.0
+-- Found openni: /usr/lib/libOpenNI.so  
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** io features related to openni2 will be disabled
+-- Could NOT find ensenso (missing:  ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** io features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing:  DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** io features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing:  _DSSDK_LIBRARIES) 
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- Found libusb-1.0: /usr/include  
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/local/lib/libpcl_common.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/local/lib/libpcl_octree.so  
+-- looking for PCL_IO
+-- Found PCL_IO: /usr/local/lib/libpcl_io.so  
+-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/local/lib/libpcl_common.so;debug;/usr/local/lib/libpcl_common.so;optimized;/usr/local/lib/libpcl_octree.so;debug;/usr/local/lib/libpcl_octree.so;/usr/lib/libOpenNI.so;vtkParallelCore;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkIOLegacy;vtkCommonExecutionModel;vtkIOCore;vtkzlib;vtkFiltersSources;vtkCommonComputationalGeometry;vtkFiltersCore;vtkFiltersGeneral;vtkImagingColor;vtkImagingCore;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersGeometry;vtkIOGeometry;vtkIOAMR;vtkFiltersAMR;vtkIOXML;vtkIOXMLParser;vtkexpat;vtkhdf5_hl;vtkhdf5;vtkInteractionImage;vtkInteractionStyle;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkInteractionWidgets;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;vtkjpeg;vtkpng;vtktiff;vtkRenderingAnnotation;vtkRenderingFreeType;vtkfreetype;vtkRenderingVolume;vtkFiltersTexture;vtkChartsCore;vtkInfovisCore;vtkRenderingContext2D;vtkIOSQL;vtksqlite;vtkIOTecplotTable;vtkFiltersFlowPaths;vtkglew;vtkFiltersImaging;vtkFiltersHyperTree;vtkImagingMath;vtkproj4;vtkexoIIc;vtkNetCDF;vtkNetCDF_cxx;vtkImagingStencil;vtkFiltersSMP;vtkDomainsChemistryOpenGL2;vtkDomainsChemistry;vtkRenderingOpenGL2;vtkIOInfovis;vtklibxml2;vtkjsoncpp;vtkIOMINC;vtkRenderingLabel;vtkIOImport;vtkIOExport;vtkRenderingGL2PSOpenGL2;vtkgl2ps;vtkFiltersProgrammable;vtkIONetCDF;vtkRenderingVolumeOpenGL2;vtkRenderingContextOpenGL2;vtkIOExodus;vtkIOParallel;vtkFiltersParallel;vtkIOLSDyna;vtkIOMovie;vtkoggtheora;vtkViewsInfovis;vtkInfovisLayout;vtkViewsCore;vtkIOEnSight;vtkGeovisCore;vtkImagingStatistics;vtkFiltersGeneric;verdict;vtkIOPLY;vtkRenderingLOD;vtkFiltersVerdict;vtkIOVideo;vtkIOParallelXML;vtkRenderingImage;vtkViewsContext2D;vtkFiltersParallelImaging;vtkFiltersPoints;vtkFiltersSelection;vtkImagingMorphological;optimized;/usr/local/lib/libpcl_io.so;debug;/usr/local/lib/libpcl_io.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/libOpenNI.so;vtkParallelCore;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkIOLegacy;vtkCommonExecutionModel;vtkIOCore;vtkzlib;vtkFiltersSources;vtkCommonComputationalGeometry;vtkFiltersCore;vtkFiltersGeneral;vtkImagingColor;vtkImagingCore;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersGeometry;vtkIOGeometry;vtkIOAMR;vtkFiltersAMR;vtkIOXML;vtkIOXMLParser;vtkexpat;vtkhdf5_hl;vtkhdf5;vtkInteractionImage;vtkInteractionStyle;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkInteractionWidgets;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;vtkjpeg;vtkpng;vtktiff;vtkRenderingAnnotation;vtkRenderingFreeType;vtkfreetype;vtkRenderingVolume;vtkFiltersTexture;vtkChartsCore;vtkInfovisCore;vtkRenderingContext2D;vtkIOSQL;vtksqlite;vtkIOTecplotTable;vtkFiltersFlowPaths;vtkglew;vtkFiltersImaging;vtkFiltersHyperTree;vtkImagingMath;vtkproj4;vtkexoIIc;vtkNetCDF;vtkNetCDF_cxx;vtkImagingStencil;vtkFiltersSMP;vtkDomainsChemistryOpenGL2;vtkDomainsChemistry;vtkRenderingOpenGL2;vtkIOInfovis;vtklibxml2;vtkjsoncpp;vtkIOMINC;vtkRenderingLabel;vtkIOImport;vtkIOExport;vtkRenderingGL2PSOpenGL2;vtkgl2ps;vtkFiltersProgrammable;vtkIONetCDF;vtkRenderingVolumeOpenGL2;vtkRenderingContextOpenGL2;vtkIOExodus;vtkIOParallel;vtkFiltersParallel;vtkIOLSDyna;vtkIOMovie;vtkoggtheora;vtkViewsInfovis;vtkInfovisLayout;vtkViewsCore;vtkIOEnSight;vtkGeovisCore;vtkImagingStatistics;vtkFiltersGeneric;verdict;vtkIOPLY;vtkRenderingLOD;vtkFiltersVerdict;vtkIOVideo;vtkIOParallelXML;vtkRenderingImage;vtkViewsContext2D;vtkFiltersParallelImaging;vtkFiltersPoints;vtkFiltersSelection;vtkImagingMorphological  
+-- Found OpenCV: /usr/local (found version "3.3.1") 
+-- Configuring done
+WARNING: Target "generatePointCloud" requests linking to directory "/usr/local/lib".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: /home/ywc/work/cplusplus/slam/cmake-build-debug
