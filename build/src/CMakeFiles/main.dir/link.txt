@@ -1,1 +1,1 @@
-g++        CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/ywc/work/cplusplus/slam/lib -rdynamic 
+g++   -std=c++11 -O3  -O3 -DNDEBUG    CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/ywc/work/cplusplus/slam/lib -rdynamic 

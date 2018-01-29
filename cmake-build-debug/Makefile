@@ -111,6 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named slam
+
+# Build rule for target.
+slam: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slam
+.PHONY : slam
+
+# fast build rule for target.
+slam/fast:
+	$(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/build
+.PHONY : slam/fast
+
+#=============================================================================
+# Target rules for targets named slamEnd
+
+# Build rule for target.
+slamEnd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamEnd
+.PHONY : slamEnd
+
+# fast build rule for target.
+slamEnd/fast:
+	$(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/build
+.PHONY : slamEnd/fast
+
+#=============================================================================
+# Target rules for targets named visualOdometry
+
+# Build rule for target.
+visualOdometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualOdometry
+.PHONY : visualOdometry
+
+# fast build rule for target.
+visualOdometry/fast:
+	$(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/build
+.PHONY : visualOdometry/fast
+
+#=============================================================================
+# Target rules for targets named jointPointCloud
+
+# Build rule for target.
+jointPointCloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jointPointCloud
+.PHONY : jointPointCloud
+
+# fast build rule for target.
+jointPointCloud/fast:
+	$(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+.PHONY : jointPointCloud/fast
+
+#=============================================================================
+# Target rules for targets named detectFeature
+
+# Build rule for target.
+detectFeature: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detectFeature
+.PHONY : detectFeature
+
+# fast build rule for target.
+detectFeature/fast:
+	$(MAKE) -f src/CMakeFiles/detectFeature.dir/build.make src/CMakeFiles/detectFeature.dir/build
+.PHONY : detectFeature/fast
+
+#=============================================================================
+# Target rules for targets named slamBase
+
+# Build rule for target.
+slamBase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamBase
+.PHONY : slamBase
+
+# fast build rule for target.
+slamBase/fast:
+	$(MAKE) -f src/CMakeFiles/slamBase.dir/build.make src/CMakeFiles/slamBase.dir/build
+.PHONY : slamBase/fast
+
+#=============================================================================
 # Target rules for targets named generatePointCloud
 
 # Build rule for target.
@@ -144,6 +222,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... slam"
+	@echo "... slamEnd"
+	@echo "... visualOdometry"
+	@echo "... jointPointCloud"
+	@echo "... detectFeature"
+	@echo "... slamBase"
 	@echo "... generatePointCloud"
 	@echo "... main"
 .PHONY : help

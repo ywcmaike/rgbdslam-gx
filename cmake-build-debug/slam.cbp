@@ -5,7 +5,7 @@
 		<Option title="slam"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\Modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\Modules\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/ywc/work/cplusplus/slam/cmake-build-debug"/>
@@ -37,6 +37,558 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="slam">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/slam" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slam"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slam/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/slam" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slam/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamEnd">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/slamEnd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slamEnd"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamEnd/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/slamEnd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slamEnd/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="visualOdometry">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/visualOdometry" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 visualOdometry"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="visualOdometry/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/visualOdometry" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 visualOdometry/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jointPointCloud">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/jointPointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 jointPointCloud"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jointPointCloud/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/jointPointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 jointPointCloud/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detectFeature">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/detectFeature" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 detectFeature"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detectFeature/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/bin/detectFeature" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 detectFeature/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamBase">
+				<Option output="/home/ywc/work/cplusplus/slam/lib/libslamBase.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slamBase"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamBase/fast">
+				<Option output="/home/ywc/work/cplusplus/slam/lib/libslamBase.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ywc/work/cplusplus/slam/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_OPENNI2"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
+					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
+					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
+					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slamBase/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ywc/work/cplusplus/slam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="generatePointCloud">
 				<Option output="/home/ywc/work/cplusplus/slam/bin/generatePointCloud" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ywc/work/cplusplus/slam/bin"/>
@@ -56,15 +608,18 @@
 					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
 					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
 					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
 					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
 					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
 					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -99,15 +654,18 @@
 					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
 					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
 					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
 					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
 					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
 					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -142,18 +700,22 @@
 					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
 					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
 					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
 					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
 					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
 					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -184,18 +746,22 @@
 					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
 					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
 					<Add option="-DEIGEN_USE_NEW_STDVECTOR"/>
 					<Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"/>
+					<Add option="-DFLANN_STATIC"/>
 					<Add directory="/home/ywc/work/cplusplus/slam/include"/>
 					<Add directory="/usr/local/include/vtk-7.1"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -208,11 +774,29 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/detectFeature.cpp">
+			<Option target="detectFeature"/>
+		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/src/generatePointCloud.cpp">
 			<Option target="generatePointCloud"/>
 		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/jointPointCloud.cpp">
+			<Option target="jointPointCloud"/>
+		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/src/main.cpp">
 			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/slam.cpp">
+			<Option target="slam"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/slamBase.cpp">
+			<Option target="slamBase"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/slamEnd.cpp">
+			<Option target="slamEnd"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/src/visualOdometry.cpp">
+			<Option target="visualOdometry"/>
 		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -248,6 +832,18 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
 		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/VTKTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/vtkModuleAPI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/VTKConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\"/>
 		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/vtkModuleAPI.cmake">
@@ -588,6 +1184,12 @@
 		</Unit>
 		<Unit filename="/home/ywc/work/cplusplus/slam/../../../../../usr/local/lib/cmake/vtk-7.1/Modules/vtkViewsInfovis.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/cmake_modules/FindG2O.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/ywc/work/cplusplus/slam/cmake_modules/FindCSparse.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

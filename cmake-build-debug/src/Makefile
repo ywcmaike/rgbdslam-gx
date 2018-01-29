@@ -111,6 +111,96 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/slam.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slam.dir/rule
+.PHONY : src/CMakeFiles/slam.dir/rule
+
+# Convenience name for target.
+slam: src/CMakeFiles/slam.dir/rule
+
+.PHONY : slam
+
+# fast build rule for target.
+slam/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/build
+.PHONY : slam/fast
+
+# Convenience name for target.
+src/CMakeFiles/slamEnd.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamEnd.dir/rule
+.PHONY : src/CMakeFiles/slamEnd.dir/rule
+
+# Convenience name for target.
+slamEnd: src/CMakeFiles/slamEnd.dir/rule
+
+.PHONY : slamEnd
+
+# fast build rule for target.
+slamEnd/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/build
+.PHONY : slamEnd/fast
+
+# Convenience name for target.
+src/CMakeFiles/visualOdometry.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/visualOdometry.dir/rule
+.PHONY : src/CMakeFiles/visualOdometry.dir/rule
+
+# Convenience name for target.
+visualOdometry: src/CMakeFiles/visualOdometry.dir/rule
+
+.PHONY : visualOdometry
+
+# fast build rule for target.
+visualOdometry/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/build
+.PHONY : visualOdometry/fast
+
+# Convenience name for target.
+src/CMakeFiles/jointPointCloud.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/jointPointCloud.dir/rule
+.PHONY : src/CMakeFiles/jointPointCloud.dir/rule
+
+# Convenience name for target.
+jointPointCloud: src/CMakeFiles/jointPointCloud.dir/rule
+
+.PHONY : jointPointCloud
+
+# fast build rule for target.
+jointPointCloud/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+.PHONY : jointPointCloud/fast
+
+# Convenience name for target.
+src/CMakeFiles/detectFeature.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeature.dir/rule
+.PHONY : src/CMakeFiles/detectFeature.dir/rule
+
+# Convenience name for target.
+detectFeature: src/CMakeFiles/detectFeature.dir/rule
+
+.PHONY : detectFeature
+
+# fast build rule for target.
+detectFeature/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/detectFeature.dir/build.make src/CMakeFiles/detectFeature.dir/build
+.PHONY : detectFeature/fast
+
+# Convenience name for target.
+src/CMakeFiles/slamBase.dir/rule:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamBase.dir/rule
+.PHONY : src/CMakeFiles/slamBase.dir/rule
+
+# Convenience name for target.
+slamBase: src/CMakeFiles/slamBase.dir/rule
+
+.PHONY : slamBase
+
+# fast build rule for target.
+slamBase/fast:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamBase.dir/build.make src/CMakeFiles/slamBase.dir/build
+.PHONY : slamBase/fast
+
+# Convenience name for target.
 src/CMakeFiles/generatePointCloud.dir/rule:
 	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generatePointCloud.dir/rule
 .PHONY : src/CMakeFiles/generatePointCloud.dir/rule
@@ -140,6 +230,33 @@ main/fast:
 	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+detectFeature.o: detectFeature.cpp.o
+
+.PHONY : detectFeature.o
+
+# target to build an object file
+detectFeature.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/detectFeature.dir/build.make src/CMakeFiles/detectFeature.dir/detectFeature.cpp.o
+.PHONY : detectFeature.cpp.o
+
+detectFeature.i: detectFeature.cpp.i
+
+.PHONY : detectFeature.i
+
+# target to preprocess a source file
+detectFeature.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/detectFeature.dir/build.make src/CMakeFiles/detectFeature.dir/detectFeature.cpp.i
+.PHONY : detectFeature.cpp.i
+
+detectFeature.s: detectFeature.cpp.s
+
+.PHONY : detectFeature.s
+
+# target to generate assembly for a file
+detectFeature.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/detectFeature.dir/build.make src/CMakeFiles/detectFeature.dir/detectFeature.cpp.s
+.PHONY : detectFeature.cpp.s
+
 generatePointCloud.o: generatePointCloud.cpp.o
 
 .PHONY : generatePointCloud.o
@@ -166,6 +283,33 @@ generatePointCloud.s: generatePointCloud.cpp.s
 generatePointCloud.cpp.s:
 	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/generatePointCloud.dir/build.make src/CMakeFiles/generatePointCloud.dir/generatePointCloud.cpp.s
 .PHONY : generatePointCloud.cpp.s
+
+jointPointCloud.o: jointPointCloud.cpp.o
+
+.PHONY : jointPointCloud.o
+
+# target to build an object file
+jointPointCloud.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.o
+.PHONY : jointPointCloud.cpp.o
+
+jointPointCloud.i: jointPointCloud.cpp.i
+
+.PHONY : jointPointCloud.i
+
+# target to preprocess a source file
+jointPointCloud.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.i
+.PHONY : jointPointCloud.cpp.i
+
+jointPointCloud.s: jointPointCloud.cpp.s
+
+.PHONY : jointPointCloud.s
+
+# target to generate assembly for a file
+jointPointCloud.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.s
+.PHONY : jointPointCloud.cpp.s
 
 main.o: main.cpp.o
 
@@ -194,6 +338,114 @@ main.cpp.s:
 	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+slam.o: slam.cpp.o
+
+.PHONY : slam.o
+
+# target to build an object file
+slam.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/slam.cpp.o
+.PHONY : slam.cpp.o
+
+slam.i: slam.cpp.i
+
+.PHONY : slam.i
+
+# target to preprocess a source file
+slam.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/slam.cpp.i
+.PHONY : slam.cpp.i
+
+slam.s: slam.cpp.s
+
+.PHONY : slam.s
+
+# target to generate assembly for a file
+slam.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/slam.cpp.s
+.PHONY : slam.cpp.s
+
+slamBase.o: slamBase.cpp.o
+
+.PHONY : slamBase.o
+
+# target to build an object file
+slamBase.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamBase.dir/build.make src/CMakeFiles/slamBase.dir/slamBase.cpp.o
+.PHONY : slamBase.cpp.o
+
+slamBase.i: slamBase.cpp.i
+
+.PHONY : slamBase.i
+
+# target to preprocess a source file
+slamBase.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamBase.dir/build.make src/CMakeFiles/slamBase.dir/slamBase.cpp.i
+.PHONY : slamBase.cpp.i
+
+slamBase.s: slamBase.cpp.s
+
+.PHONY : slamBase.s
+
+# target to generate assembly for a file
+slamBase.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamBase.dir/build.make src/CMakeFiles/slamBase.dir/slamBase.cpp.s
+.PHONY : slamBase.cpp.s
+
+slamEnd.o: slamEnd.cpp.o
+
+.PHONY : slamEnd.o
+
+# target to build an object file
+slamEnd.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.o
+.PHONY : slamEnd.cpp.o
+
+slamEnd.i: slamEnd.cpp.i
+
+.PHONY : slamEnd.i
+
+# target to preprocess a source file
+slamEnd.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.i
+.PHONY : slamEnd.cpp.i
+
+slamEnd.s: slamEnd.cpp.s
+
+.PHONY : slamEnd.s
+
+# target to generate assembly for a file
+slamEnd.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.s
+.PHONY : slamEnd.cpp.s
+
+visualOdometry.o: visualOdometry.cpp.o
+
+.PHONY : visualOdometry.o
+
+# target to build an object file
+visualOdometry.cpp.o:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/visualOdometry.cpp.o
+.PHONY : visualOdometry.cpp.o
+
+visualOdometry.i: visualOdometry.cpp.i
+
+.PHONY : visualOdometry.i
+
+# target to preprocess a source file
+visualOdometry.cpp.i:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/visualOdometry.cpp.i
+.PHONY : visualOdometry.cpp.i
+
+visualOdometry.s: visualOdometry.cpp.s
+
+.PHONY : visualOdometry.s
+
+# target to generate assembly for a file
+visualOdometry.cpp.s:
+	cd /home/ywc/work/cplusplus/slam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/visualOdometry.cpp.s
+.PHONY : visualOdometry.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,14 +454,38 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... slam"
+	@echo "... slamEnd"
+	@echo "... visualOdometry"
+	@echo "... jointPointCloud"
+	@echo "... detectFeature"
+	@echo "... slamBase"
 	@echo "... generatePointCloud"
 	@echo "... main"
+	@echo "... detectFeature.o"
+	@echo "... detectFeature.i"
+	@echo "... detectFeature.s"
 	@echo "... generatePointCloud.o"
 	@echo "... generatePointCloud.i"
 	@echo "... generatePointCloud.s"
+	@echo "... jointPointCloud.o"
+	@echo "... jointPointCloud.i"
+	@echo "... jointPointCloud.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... slam.o"
+	@echo "... slam.i"
+	@echo "... slam.s"
+	@echo "... slamBase.o"
+	@echo "... slamBase.i"
+	@echo "... slamBase.s"
+	@echo "... slamEnd.o"
+	@echo "... slamEnd.i"
+	@echo "... slamEnd.s"
+	@echo "... visualOdometry.o"
+	@echo "... visualOdometry.i"
+	@echo "... visualOdometry.s"
 .PHONY : help
 
 

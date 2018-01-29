@@ -2,5 +2,11 @@
 /home/ywc/work/cplusplus/slam/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
 /home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/slam.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/slamEnd.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/visualOdometry.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/jointPointCloud.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/detectFeature.dir
+/home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/slamBase.dir
 /home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/generatePointCloud.dir
 /home/ywc/work/cplusplus/slam/cmake-build-debug/src/CMakeFiles/main.dir

@@ -17,8 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_OPENNI2"
   "DISABLE_PCAP"
   "DISABLE_PNG"
+  "DISABLE_RSSDK"
   "EIGEN_USE_NEW_STDVECTOR"
   "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"
+  "FLANN_STATIC"
   "vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"
   "vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"
   "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
@@ -30,9 +32,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/usr/local/include/vtk-7.1"
+  "/usr/local/include/opencv"
+  "/usr/local/include"
   "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
+  "/usr/include/suitesparse"
   )
 
 # Targets to which this target links.

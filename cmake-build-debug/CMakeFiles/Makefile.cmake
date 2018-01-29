@@ -10,7 +10,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
-  "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeConfigurableFile.in"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeFindCodeBlocks.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeFindDependencyMacro.cmake"
@@ -18,8 +17,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c"
-  "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckIncludeFile.c.in"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckIncludeFile.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckLibraryExists.cmake"
   "/home/ywc/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckSymbolExists.cmake"
@@ -41,6 +38,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
+  "../cmake_modules/FindCSparse.cmake"
+  "../cmake_modules/FindG2O.cmake"
   "../src/CMakeLists.txt"
   "/usr/local/lib/cmake/vtk-7.1/Modules/vtkChartsCore.cmake"
   "/usr/local/lib/cmake/vtk-7.1/Modules/vtkCommonColor.cmake"
@@ -181,6 +180,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/slam.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamEnd.dir/DependInfo.cmake"
+  "src/CMakeFiles/visualOdometry.dir/DependInfo.cmake"
+  "src/CMakeFiles/jointPointCloud.dir/DependInfo.cmake"
+  "src/CMakeFiles/detectFeature.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamBase.dir/DependInfo.cmake"
   "src/CMakeFiles/generatePointCloud.dir/DependInfo.cmake"
   "src/CMakeFiles/main.dir/DependInfo.cmake"
   )

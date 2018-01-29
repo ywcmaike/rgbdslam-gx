@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
+  "../cmake_modules/FindCSparse.cmake"
+  "../cmake_modules/FindG2O.cmake"
   "../src/CMakeLists.txt"
   "/usr/local/lib/cmake/vtk-7.1/Modules/vtkChartsCore.cmake"
   "/usr/local/lib/cmake/vtk-7.1/Modules/vtkCommonColor.cmake"
@@ -138,15 +140,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"
-  "/usr/share/cmake-3.5/Modules/CMakeConfigurableFile.in"
   "/usr/share/cmake-3.5/Modules/CMakeFindDependencyMacro.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeParseArguments.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.5/Modules/CheckFunctionExists.c"
-  "/usr/share/cmake-3.5/Modules/CheckIncludeFile.c.in"
   "/usr/share/cmake-3.5/Modules/CheckIncludeFile.cmake"
   "/usr/share/cmake-3.5/Modules/CheckLibraryExists.cmake"
   "/usr/share/cmake-3.5/Modules/CheckSymbolExists.cmake"
@@ -180,6 +179,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/generatePointCloud.dir/DependInfo.cmake"
+  "src/CMakeFiles/slam.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamEnd.dir/DependInfo.cmake"
+  "src/CMakeFiles/visualOdometry.dir/DependInfo.cmake"
+  "src/CMakeFiles/jointPointCloud.dir/DependInfo.cmake"
   "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "src/CMakeFiles/generatePointCloud.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamBase.dir/DependInfo.cmake"
+  "src/CMakeFiles/detectFeature.dir/DependInfo.cmake"
   )
