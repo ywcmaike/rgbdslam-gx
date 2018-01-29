@@ -1,0 +1,7 @@
+# the complete dataset can be downloaded in https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html.
+a part of dataset can be downloaded in 
+链接: https://pan.baidu.com/s/1c33PZaC 密码: f9re
+
+And you can unpack it in this directory. such as 
+7z -x data.7z 
+
